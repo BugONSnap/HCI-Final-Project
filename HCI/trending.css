@@ -1,0 +1,857 @@
+/* Base styles for larger screens */
+body {
+  height: 100vh;
+  background-image: url("/loginregprof/bg.jpg");
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background-color: #b7b6b898;
+  padding: 1px;
+  border-radius: 5px;
+  position: relative;
+  top: -2px; 
+}
+#one {
+  width: 10%; 
+  background-color: #0f0e10ac;
+  color: white;
+  font-family: 'Cambria', serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+} 
+#two  {
+  position: relative;
+  right: 7%;
+  width: 12%; 
+  background-color: #0f0e10ac;
+  color: white;
+  font-family: 'Cambria', serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#three {
+  position: relative;
+  right: 15%;
+  width: 10%; 
+  background-color: #0f0e10ac;
+  color: white;
+  font-family: 'Cambria', serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.header input[type="text"] {
+  position: relative;
+  left: 9%;
+  background-color: #0f0e10ac;
+  color: white;
+  font-family: 'Cambria', serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px;
+  width: 15%;
+}
+.search-btn {
+  background-color: #0f0e10f9;
+  color: white;
+  font-family: 'Cambria', serif;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+.profile-pic {
+  position: relative;
+  right: 8%;
+  width: 40px;
+  height: 40px;
+  background-image: url("/loginregprof/C1.JPG");
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: #0f0e10ac solid 1px;
+  border-radius: 10px;
+  color: white;
+  width: 30%;
+  text-align: center;
+  font-family: 'Cambria';
+}
+
+.movies-container {
+  width: 90%;
+}
+
+.genre-section {
+  margin-top: 30px;
+}
+
+.genre-section h2 {
+  color: aliceblue;
+  font-family: 'Cambria';
+  font-size: 30px;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.movie-card {
+  color: whitesmoke;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      height: auto;
+  }
+  #one, #two, #three, .header input[type="text"], .search-btn {
+      width: 80%;
+      margin: 5px 0;
+      left: 0;
+      position: relative;
+  }
+  .profile-pic {
+      margin-top: 10px;
+      left: 5px;
+  }
+  h1 {
+      width: 80%;
+      right: 0;
+      top: 0;
+  }
+  .movies-container {
+      width: 100%;
+      padding: 0 10px;
+  }
+  .genre-section h2 {
+      left: 0;
+      top: 0;
+      text-align: center;
+  }
+  .movie-row {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .movie-card {
+      width: 100px;
+      height: 150px;
+  }
+}
+
+#a1 {
+  position: relative;
+  background-image: url("/movies/GxK.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a1:hover::before {
+  content: "Movie Title: GODZILLA X KONG: THE NEW EMPIRE\nDuration: 1hr 55 mins\nRating: 9/10";
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#a2 {
+  position: relative;
+  background-image: url("/movies/a2.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a2:hover::before {
+  content: "Movie Title: In the Land of Saints and Sinners\nDuration: 1hr 46 mins\nRating: 6.3/10";
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#a3 {
+  position: relative;
+  background-image: url("/movies/a3.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a3:hover::before {
+  content: "Movie Title:Fast Charlie Duration 1hr 46 mins Rating: 6.3/10";
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#a4 {
+  position: relative;
+  background-image: url("/movies/a4.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a4:hover::before {
+  content: "Movie Title:Red Right Hand Duration 1hr 51 mins Rating: 5/10";
+  position: absolute;
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#a5 {
+  position: relative;
+  background-image: url("/movies/a5.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a5:hover::before {
+  content: "Movie Title:One More Shot 1hr 42 mins Rating: 5.5/10";
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#a6 {
+  position: relative;
+  background-image: url("/movies/a6.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#a6:hover::before {
+  content: "Movie Title:Desperation Road Duration 1hr 52 mins Rating: 6/10";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#c1 {
+  position: relative;
+  background-image: url("/movies/c.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c1:hover::before {
+  content: "Movie Title: Duration  Rating: ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-linea';
+}
+#c2 {
+  position: relative;
+  background-image: url("/movies/c2.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c2:hover::before {
+  content: "Movie Title:Despicable Me 4 Duration:1hr 53 mins  Rating:7/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+
+#c1 {
+  position: relative;
+  background-image: url("/movies/panda.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c1:hover::before {
+  content: "Movie Title:Kung Fu Panda 4 Duration: 1hr 34mins Rating:6.3/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+
+#c3 {
+  position: relative;
+  background-image: url("/movies/c3.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c3:hover::before {
+  content: "Movie Title:GhostBusters:Frozen Empire Duration:1hr 56mins Rating:6.4/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+
+#c4 {
+  position: relative;
+  background-image: url("/movies/c4.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c4:hover::before {
+  content: "Movie Title:Deadpool 3 Duration:SOON  Rating:SOON ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line;
+  font-size: small;
+  font-family: 'cambria';
+}
+
+#c5 {
+  position: relative;
+  background-image: url("/movies/c5.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c5:hover::before {
+  content: "Movie Title:The Casagranda Movie Duration:1hr 25mins  Rating:5.7/10 ";
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+
+#c6 {
+  position: relative;
+  background-image: url("/movies/c6.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#c6:hover::before {
+  content: "Movie Title:Lift Duration:1hr 57mins  Rating:5.5/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d1 {
+  position: relative;
+  background-image: url("/movies/d1.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d1:hover::before {
+  content: "Movie Title:Barbie Duration:1hr 54mins  Rating:7/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d2 {
+  position: relative;
+  background-image: url("/movies/d2.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d2:hover::before {
+  content: "Movie Title:My Name Is Loh Kiwan Duration:2hrs 13mins  Rating:7/10 ";
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d3 {
+  position: relative;
+  background-image: url("/movies/d3.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d3:hover::before {
+  content: "Movie Title:Space Man Duration:1hr 49mins  Rating:5.8/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d4 {
+  position: relative;
+  background-image: url("/movies/d4.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d4:hover::before {
+  content: "Movie Title:BadLand HUnters Duration:1h 47mins  Rating:6/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d5 {
+  position: relative;
+  background-image: url("/movies/d5.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d5:hover::before {
+  content: "Movie Title:Dange Duration:2hr 31mins  Rating:5/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#d6 {
+  position: relative;
+  background-image: url("/movies/d6.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#d6:hover::before {
+  content: "Movie Title:Nowhere Duration:1hr 49mins  Rating:6.3/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m1 {
+  position: relative;
+  background-image: url("/movies/m1.png");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m1:hover::before {
+  content: "Movie Title:Leave The World Behind Duration:2hrs 20mins  Rating:6.5/10 ";
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m2 {
+  position: relative;
+  background-image: url("/movies/m2.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m2:hover::before {
+  content: "Movie Title:Tin & Tina  Duration:1hr 59mins  Rating:5/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m3 {
+  position: relative;
+  background-image: url("/movies/m3.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m3:hover::before {
+  content: "Movie Title:Sister Death Duration:1hr 50mins  Rating:6/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m4 {
+  position: relative;
+  background-image: url("/movies/m4.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m4:hover::before {
+  content: "Movie Title:Unlocked Duration:1hr 57mins  Rating:6.4/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m5 {
+  position: relative;
+  background-image: url("/movies/m5.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m5:hover::before {
+  content: "Movie Title:Hell House LLC Origins Duration:1hr 38mins  Rating:6.2/10 ";
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#m6 {
+  position: relative;
+  background-image: url("/movies/m6.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#m6:hover::before {
+  content: "Movie Title:The Conference Duration:1hr 40mins  Rating:5.7/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h1 {
+  position: relative;
+  background-image: url("/movies/h1.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h1:hover::before {
+  content: "Movie Title:Abigail Duration:1hr 49mins  Rating:7.1/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h2 {
+  position: relative;
+  background-image: url("/movies/h2.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h2:hover::before {
+  content: "Movie Title:The First Omen Duration:1hr 57mins  Rating:7/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h3 {
+  position: relative;
+  background-image: url("/movies/h3.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h3:hover::before {
+  content: "Movie Title:Immaculate Duration:1hr 29mins  Rating:6/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h4 {
+  position: relative;
+  background-image: url("/movies/h4.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h4:hover::before {
+  content: "Movie Title:Smile Duration:1hr 55mins  Rating:7/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h5 {
+  position: relative;
+  background-image: url("/movies/h5.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h5:hover::before {
+  content: "Movie Title:The Pope's Exorcist Duration:1hr 43mins  Rating:10/10 ";
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}
+#h6 {
+  position: relative;
+  background-image: url("/movies/h6.jpg");
+  background-position: center left;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+#h6:hover::before {
+  content: "Movie Title:Arrival Duration:1hr 56mins  Rating:8/10 ";
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.36);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  font-size: small;
+  font-family: 'cambria';
+}

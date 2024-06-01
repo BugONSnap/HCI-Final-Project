@@ -1,0 +1,120 @@
+body {
+    background-image: url("/loginregprof/elf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    position: relative;
+    right: 30%;
+    top: 20%;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(64, 64, 64, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Adding the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* WebKit specific blur effect */
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #bdb9b9;
+    font-family: 'Cambria';
+}
+
+#email-container,
+#password-container {
+    margin: 15px 0;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    position: relative;
+    right: 4%;
+    color: #f9f5f5;
+    background-color: #979191;
+    padding: 10px;
+    border: 1px solid #bdb9b9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#log button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #979191;
+    color: #eee4e4;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#log button:hover {
+    background-color: #979191; 
+}
+
+.register-link {
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.register-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mobile specific styles */
+@media (max-width: 600px) {
+    .login-container {
+        top: 10%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: none;
+        -webkit-transform: none; /* WebKit specific transform */
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 600px) {
+    .login-container {
+        width: 70%;
+        transform: none;
+        -webkit-transform: none; /* WebKit specific transform */
+    }
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        width: 50%;
+        transform: none;
+        -webkit-transform: none; /* WebKit specific transform */
+    }
+}
+
+@media (min-width: 992px) {
+    .login-container {
+        width: 30%;
+        transform: none;
+        -webkit-transform: none; /* WebKit specific transform */
+    }
+}
+
+@media (min-width: 1200px) {
+    .login-container {
+        width: 25%;
+        transform: none;
+        -webkit-transform: none; /* WebKit specific transform */
+    }
+}
